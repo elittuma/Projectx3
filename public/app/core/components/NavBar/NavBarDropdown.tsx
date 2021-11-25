@@ -23,7 +23,6 @@ const NavBarDropdown = ({
   items = [],
   onHeaderClick,
   reverseDirection = false,
-  subtitleText,
 }: Props) => {
   const filteredItems = items.filter((item) => !item.hideFromMenu);
   const theme = useTheme2();
