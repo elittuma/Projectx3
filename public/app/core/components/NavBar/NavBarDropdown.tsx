@@ -50,7 +50,7 @@ const NavBarDropdown = ({
           url={child.url}
         />
       ))}
-      {subtitleText && <li className={styles.subtitle}>{subtitleText}</li>}
+      {/* {subtitleText && <li className={styles.subtitle}>{subtitleText}</li>} */}
     </ul>
   );
 };

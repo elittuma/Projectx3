@@ -1,14 +1,14 @@
-{{Subject .Subject "Welcome to Grafana"}}
+{{Subject .Subject "Welcome to Enerview"}}
 
 Hi {{.Name}},
 
 Welcome! Ready to start building some beautiful metric and analytic dashboards?
 
-If you are new to Grafana, refer to the Getting started with Grafana guide on
+If you are new to Enerview, refer to the Getting started with Enerview guide on
 https://grafana.com/docs/grafana/latest/getting-started/getting-started/.
 
 Thank you for joining our community.
 
-The Grafana team
+The Enerview team
 
-Sent by Grafana v{{.BuildVersion}} (c) 2021 Grafana Labs
+Sent by Enerview (c) 2021 Enerview Labs

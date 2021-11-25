@@ -121,11 +121,11 @@ export class AlertRuleListUnconnected extends PureComponent<Props> {
                 Add NG Alert
               </LinkButton>
             )}
-            <Button variant="secondary" onClick={this.onOpenHowTo}>
+            {/* <Button variant="secondary" onClick={this.onOpenHowTo}>
               How to add an alert
-            </Button>
+            </Button> */}
           </div>
-          <UnifiedAlertingPromotion />
+          {/* <UnifiedAlertingPromotion /> */}
           <VerticalGroup spacing="none">
             {alertRules.map((rule) => {
               return (

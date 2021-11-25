@@ -52,7 +52,7 @@ export const enrichConfigItems = (
 
     if (link.id === 'help') {
       link.children = [
-        ...getFooterLinks(),
+        //...getFooterLinks(),
         {
           text: 'Keyboard shortcuts',
           icon: 'keyboard',
