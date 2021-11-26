@@ -1,0 +1,24 @@
+version: '3.5'
+services:
+  dashboard:
+    restart: always
+    image: 'projectx3'
+    ports:
+      - '80:3000'
+      - '443:3000'
+      - '3000:3000'
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,grafana-worldmap-panel,ryantxu-annolist-panel,marcusolsson-dynamictext-panel,agenty-flowcharting-panel,isaozler-paretochart-panel,natel-plotly-panel,grafana-polystat-panel,vonage-status-panel,innius-video-panel,pierosavi-imageit-panel,grafana-googlesheets-datasource
+    volumes:
+      - ./plugins:/var/lib/grafana/plugins
+      - ./certs:/etc/projectx3
+      - projectx3-data:/var/lib/grafana
+      - ./grafana:/etc/grafana
+      - projectx3-log:/var/log/grafana
+      - projectx3-home:/usr/share/grafana
+
+volumes:
+  projectx3-data:
+  projectx3-home:
+  projectx3-log:
+  projectx3-prov:
