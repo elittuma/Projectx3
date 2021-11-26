@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"time"
 
 	"github.com/prometheus/alertmanager/template"
 	"github.com/prometheus/alertmanager/types"
@@ -12,7 +11,6 @@ import (
 	"github.com/grafana/grafana/pkg/bus"
 	"github.com/grafana/grafana/pkg/infra/log"
 	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
 )
 
 // GoogleChatNotifier is responsible for sending
@@ -85,11 +83,11 @@ func (gcn *GoogleChatNotifier) Notify(ctx context.Context, as ...*types.Alert) (
 	})
 
 	// Add text paragraph widget for the build version and timestamp.
-	widgets = append(widgets, textParagraphWidget{
-		Text: text{
-			Text: "Grafana v" + setting.BuildVersion + " | " + (timeNow()).Format(time.RFC822),
-		},
-	})
+	// widgets = append(widgets, textParagraphWidget{
+	// 	Text: text{
+	// 		Text: "Grafana v" + setting.BuildVersion + " | " + (timeNow()).Format(time.RFC822),
+	// 	},
+	// })
 
 	// Nest the required structs.
 	res := &outerStruct{

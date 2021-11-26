@@ -3,13 +3,11 @@ package notifiers
 import (
 	"encoding/json"
 	"fmt"
-	"time"
 
 	"github.com/grafana/grafana/pkg/bus"
 	"github.com/grafana/grafana/pkg/infra/log"
 	"github.com/grafana/grafana/pkg/models"
 	"github.com/grafana/grafana/pkg/services/alerting"
-	"github.com/grafana/grafana/pkg/setting"
 )
 
 func init() {
@@ -188,11 +186,11 @@ func (gcn *GoogleChatNotifier) Notify(evalContext *alerting.EvalContext) error {
 	})
 
 	// add text paragraph widget for the build version and timestamp
-	widgets = append(widgets, textParagraphWidget{
-		Text: text{
-			Text: "Grafana v" + setting.BuildVersion + " | " + (time.Now()).Format(time.RFC822),
-		},
-	})
+	// widgets = append(widgets, textParagraphWidget{
+	// 	Text: text{
+	// 		Text: "Grafana v" + setting.BuildVersion + " | " + (time.Now()).Format(time.RFC822),
+	// 	},
+	// })
 
 	// nest the required structs
 	res1D := &outerStruct{

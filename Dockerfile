@@ -9,6 +9,7 @@ COPY .yarn .yarn
 COPY packages packages
 COPY plugins-bundled plugins-bundled
 
+RUN export NODE_OPTIONS="--max-old-space-size=8192"
 RUN yarn install
 
 COPY tsconfig.json .eslintrc .editorconfig .browserslistrc .prettierrc.js babel.config.json ./
@@ -18,7 +19,6 @@ COPY scripts scripts
 COPY emails emails
 
 ENV NODE_ENV production
-
 RUN yarn build
 
 FROM golang:1.17.3-alpine3.14 as go-builder

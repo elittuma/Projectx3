@@ -10,11 +10,10 @@ import { getAlertRuleItems, getSearchQuery } from './state/selectors';
 import { SelectableValue } from '@grafana/data';
 import { config, locationService } from '@grafana/runtime';
 import { setSearchQuery } from './state/reducers';
-import { Button, FilterInput, LinkButton, Select, VerticalGroup } from '@grafana/ui';
+import { FilterInput, LinkButton, Select, VerticalGroup } from '@grafana/ui';
 import { GrafanaRouteComponentProps } from 'app/core/navigation/types';
 import { ShowModalReactEvent } from '../../types/events';
 import { AlertHowToModal } from './AlertHowToModal';
-import { UnifiedAlertingPromotion } from './components/UnifiedAlertingPromotion';
 
 function mapStateToProps(state: StoreState) {
   return {
