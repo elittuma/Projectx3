@@ -13,7 +13,6 @@ public/dist/tsconfig.tsbuildinfo
 /emails/dist
 /reports
 /e2e/tmp
-vendor/
 /docs/menu.yaml
 /requests
 
