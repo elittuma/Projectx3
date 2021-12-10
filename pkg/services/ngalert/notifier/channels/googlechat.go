@@ -71,7 +71,7 @@ func (gcn *GoogleChatNotifier) Notify(ctx context.Context, as ...*types.Alert) (
 		Buttons: []button{
 			{
 				TextButton: textButton{
-					Text: "OPEN IN GRAFANA",
+					Text: "OPEN IN ENERVIEW",
 					OnClick: onClick{
 						OpenLink: openLink{
 							URL: ruleURL,

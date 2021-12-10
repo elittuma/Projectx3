@@ -174,7 +174,7 @@ func (gcn *GoogleChatNotifier) Notify(evalContext *alerting.EvalContext) error {
 		Buttons: []button{
 			{
 				TextButton: textButton{
-					Text: "OPEN IN GRAFANA",
+					Text: "OPEN IN ENERVIEW",
 					OnClick: onClick{
 						OpenLink: openLink{
 							URL: ruleURL,

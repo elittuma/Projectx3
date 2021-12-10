@@ -2343,7 +2343,7 @@ var expNonEmailNotifications = map[string][]string{
 					  "buttons": [
 						{
 						  "textButton": {
-							"text": "OPEN IN GRAFANA",
+							"text": "OPEN IN ENERVIEW",
 							"onClick": {
 							  "openLink": {
 								"url": "http://localhost:3000/alerting/list"

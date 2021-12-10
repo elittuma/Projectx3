@@ -67,7 +67,7 @@ func TestGoogleChatNotifier(t *testing.T) {
 										Buttons: []button{
 											{
 												TextButton: textButton{
-													Text: "OPEN IN GRAFANA",
+													Text: "OPEN IN ENERVIEW",
 													OnClick: onClick{
 														OpenLink: openLink{
 															URL: "http://localhost/alerting/list",
@@ -126,7 +126,7 @@ func TestGoogleChatNotifier(t *testing.T) {
 										Buttons: []button{
 											{
 												TextButton: textButton{
-													Text: "OPEN IN GRAFANA",
+													Text: "OPEN IN ENERVIEW",
 													OnClick: onClick{
 														OpenLink: openLink{
 															URL: "http://localhost/alerting/list",
