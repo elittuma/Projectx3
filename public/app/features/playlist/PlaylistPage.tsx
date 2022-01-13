@@ -62,9 +62,6 @@ export const PlaylistPage: FC<PlaylistPageProps> = ({ navModel }) => {
       buttonLink="playlists/new"
       buttonTitle="Create Playlist"
       proTip="You can use playlists to cycle dashboards on TVs without user control"
-      proTipLink="http://docs.grafana.org/reference/playlist/"
-      proTipLinkTitle="Learn more"
-      proTipTarget="_blank"
     />
   );
 

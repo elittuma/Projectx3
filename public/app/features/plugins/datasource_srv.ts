@@ -44,7 +44,7 @@ export class DatasourceSrv implements DataSourceService {
 
     for (const dsSettings of Object.values(settingsMapByName)) {
       if (!dsSettings.uid) {
-        dsSettings.uid = dsSettings.name; // -- Grafana --, -- Mixed etc
+        dsSettings.uid = dsSettings.name; // -- Enerview --, -- Mixed etc
       }
 
       this.settingsMapByUid[dsSettings.uid] = dsSettings;
@@ -273,7 +273,7 @@ export class DatasourceSrv implements DataSourceService {
       }
 
       if (!filters.tracing) {
-        base.push(this.getInstanceSettings('-- Grafana --')!);
+        base.push(this.getInstanceSettings('-- Enerview --')!);
       }
     }
 

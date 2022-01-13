@@ -408,7 +408,7 @@ func (hs *HTTPServer) buildDashboardNavLinks(c *models.ReqContext, hasEditPerm b
 			})
 		}
 		dashboardChildNavs = append(dashboardChildNavs, &dtos.NavLink{
-			Text: "Import", SubTitle: "Import dashboard from file or Grafana.com", Id: "import", Icon: "plus",
+			Text: "Import", SubTitle: "Import dashboard from file", Id: "import", Icon: "plus",
 			Url: hs.Cfg.AppSubURL + "/dashboard/import", HideFromTabs: true,
 		})
 	}
@@ -457,7 +457,7 @@ func (hs *HTTPServer) buildCreateNavLinks(c *models.ReqContext) []*dtos.NavLink 
 		})
 	}
 	children = append(children, &dtos.NavLink{
-		Text: "Import", SubTitle: "Import dashboard from file or Grafana.com", Id: "import", Icon: "import",
+		Text: "Import", SubTitle: "Import dashboard from file", Id: "import", Icon: "import",
 		Url: hs.Cfg.AppSubURL + "/dashboard/import",
 	})
 

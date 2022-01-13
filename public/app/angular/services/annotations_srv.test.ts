@@ -5,7 +5,7 @@ describe('AnnotationsSrv', () => {
 
   describe('When translating the query result', () => {
     const annotationSource = {
-      datasource: '-- Grafana --',
+      datasource: '-- Enerview --',
       enable: true,
       hide: false,
       limit: 200,

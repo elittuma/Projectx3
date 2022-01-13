@@ -318,8 +318,8 @@ stubs['-- Mixed --'] = {
   },
 };
 
-stubs['-- Grafana --'] = {
-  name: '-- Grafana --',
+stubs['-- Enerview --'] = {
+  name: '-- Enerview --',
   meta: {
     id: 'grafana',
     info: { version: '1.2.1' },

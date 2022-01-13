@@ -81,7 +81,7 @@ export class QueryEditor extends PureComponent<Props, State> {
     } as any;
 
     getDataSourceSrv()
-      .get('-- Grafana --')
+      .get('-- Enerview --')
       .then((ds) => {
         const gds = ds as GrafanaDatasource;
         gds.query(query).subscribe({

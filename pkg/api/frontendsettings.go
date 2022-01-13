@@ -170,7 +170,7 @@ func (hs *HTTPServer) getFrontendSettingsMap(c *models.ReqContext) (map[string]i
 		return nil, err
 	}
 
-	defaultDS := "-- Grafana --"
+	defaultDS := "-- Enerview --"
 	for n, ds := range dataSources {
 		dsM := ds.(map[string]interface{})
 		if isDefault, _ := dsM["isDefault"].(bool); isDefault {
