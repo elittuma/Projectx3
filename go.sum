@@ -905,8 +905,9 @@ github.com/go-openapi/strfmt v0.19.5/go.mod h1:eftuHTlB/dI8Uq8JJOyRlieZf+WkkxUuk
 github.com/go-openapi/strfmt v0.19.11/go.mod h1:UukAYgTaQfqJuAFlNxxMWNvMYiwiXtLsF2VwmoFtbtc=
 github.com/go-openapi/strfmt v0.20.0/go.mod h1:UukAYgTaQfqJuAFlNxxMWNvMYiwiXtLsF2VwmoFtbtc=
 github.com/go-openapi/strfmt v0.20.1/go.mod h1:43urheQI9dNtE5lTZQfuFJvjYJKPrxicATpEfZwHUNk=
-github.com/go-openapi/strfmt v0.20.2 h1:6XZL+fF4VZYFxKQGLAUB358hOrRh/wS51uWEtlONADE=
 github.com/go-openapi/strfmt v0.20.2/go.mod h1:43urheQI9dNtE5lTZQfuFJvjYJKPrxicATpEfZwHUNk=
+github.com/go-openapi/strfmt v0.21.1 h1:G6s2t5V5kGCHLVbSdZ/6lI8Wm4OzoPFkc3/cjAsKQrM=
+github.com/go-openapi/strfmt v0.21.1/go.mod h1:I/XVKeLc5+MM5oPNN7P6urMOpuLXEcNrCX/rPGuWb0k=
 github.com/go-openapi/swag v0.0.0-20160704191624-1d0bd113de87/go.mod h1:DXUve3Dpr1UfpPtxFw+EFuQ41HhCWZfha5jSVRG7C7I=
 github.com/go-openapi/swag v0.17.0/go.mod h1:AByQ+nYG6gQg71GINrmuDXCPWdL640yX49/kXLo40Tg=
 github.com/go-openapi/swag v0.17.2/go.mod h1:AByQ+nYG6gQg71GINrmuDXCPWdL640yX49/kXLo40Tg=
@@ -1215,8 +1216,6 @@ github.com/gorilla/websocket v1.4.2 h1:+/TMaTYc4QFitKJxsQ7Yye35DkWvkdLcvGKqM+x0U
 github.com/gorilla/websocket v1.4.2/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
 github.com/gosimple/slug v1.9.0 h1:r5vDcYrFz9BmfIAMC829un9hq7hKM4cHUrsv36LbEqs=
 github.com/gosimple/slug v1.9.0/go.mod h1:AMZ+sOVe65uByN3kgEyf9WEBKBCSS+dJjMX9x4vDJbg=
-github.com/grafana/cuetsy v0.0.0-20210928021233-5ddfb47f9a7d h1:vYCNM25g5aEactkMiILJvm2jW2BVGYB1QzLx7lAhMLw=
-github.com/grafana/cuetsy v0.0.0-20210928021233-5ddfb47f9a7d/go.mod h1:H9Ei+Q808FCWyeEzpaW5GMfBvXCuFOfQa4x/vzKY+Fg=
 github.com/grafana/cuetsy v0.0.0-20211119211437-8c25464cc9bf h1:RY69RBqlr3yWNgpAqrSRiUvqa/Jw6uqVqiHNHLzifhU=
 github.com/grafana/cuetsy v0.0.0-20211119211437-8c25464cc9bf/go.mod h1:H9Ei+Q808FCWyeEzpaW5GMfBvXCuFOfQa4x/vzKY+Fg=
 github.com/grafana/dskit v0.0.0-20211011144203-3a88ec0b675f h1:FvvSVEbnGeM2bUivGmsiXTi8URJyBU7TcFEEoRe5wWI=
@@ -1552,6 +1551,7 @@ github.com/klauspost/compress v1.11.12/go.mod h1:aoV0uJVorq1K+umq18yTdKaF57EivdY
 github.com/klauspost/compress v1.11.13/go.mod h1:aoV0uJVorq1K+umq18yTdKaF57EivdYsUV+/s2qKfXs=
 github.com/klauspost/compress v1.12.2/go.mod h1:8dP1Hq4DHOhN9w426knH3Rhby4rFm6D8eO+e+Dq5Gzg=
 github.com/klauspost/compress v1.13.1/go.mod h1:8dP1Hq4DHOhN9w426knH3Rhby4rFm6D8eO+e+Dq5Gzg=
+github.com/klauspost/compress v1.13.6/go.mod h1:/3/Vjq9QcHkK5uEr5lBEmyoZ1iFhe47etQ6QUkpK6sk=
 github.com/klauspost/cpuid v0.0.0-20170728055534-ae7887de9fa5/go.mod h1:Pj4uuM528wm8OyEC2QMXAi2YiTZ96dNQPGgoMS4s3ek=
 github.com/klauspost/cpuid v1.2.1/go.mod h1:Pj4uuM528wm8OyEC2QMXAi2YiTZ96dNQPGgoMS4s3ek=
 github.com/klauspost/cpuid v1.2.3/go.mod h1:Pj4uuM528wm8OyEC2QMXAi2YiTZ96dNQPGgoMS4s3ek=
@@ -1969,8 +1969,6 @@ github.com/prometheus/alertmanager v0.21.1-0.20210422101724-8176f78a70e1/go.mod 
 github.com/prometheus/alertmanager v0.22.2/go.mod h1:rYinOWxFuCnNssc3iOjn2oMTlhLaPcUuqV5yk5JKUAE=
 github.com/prometheus/alertmanager v0.23.0/go.mod h1:0MLTrjQI8EuVmvykEhcfr/7X0xmaDAZrqMgxIq3OXHk=
 github.com/prometheus/alertmanager v0.23.1-0.20210914172521-e35efbddb66a/go.mod h1:U7pGu+z7A9ZKhK8lq1MvIOp5GdVlZjwOYk+S0h3LSbA=
-github.com/prometheus/alertmanager v0.23.1-0.20211021072955-1b8afe7cb5aa h1:KKgVswVOfDYOn9GNtO7bR3r4vyM77WXuJsyGxMl1Zgs=
-github.com/prometheus/alertmanager v0.23.1-0.20211021072955-1b8afe7cb5aa/go.mod h1:pRqzxS2B4tciJfx2JUvR67udJrQeSUZ603OQQFFUrIQ=
 github.com/prometheus/alertmanager v0.23.1-0.20211116083607-e2a10119aaf7 h1:OMwDo53awRp+UzaBrwmVC7HJiAMYP/niBJfKcGpPiac=
 github.com/prometheus/alertmanager v0.23.1-0.20211116083607-e2a10119aaf7/go.mod h1:1UH4XA4DAXzsvofKVzcXmC0mqt6Y8BZP9JcQWKDmbFc=
 github.com/prometheus/client_golang v0.0.0-20180209125602-c332b6f63c06/go.mod h1:7SWBe2y4D6OKWSNQJUaRYU/AaXPKyh/dDVn+NZz0KFw=
@@ -2034,7 +2032,6 @@ github.com/prometheus/common/sigv4 v0.1.0 h1:qoVebwtwwEhS85Czm2dSROY5fTo2PAPEVdD
 github.com/prometheus/common/sigv4 v0.1.0/go.mod h1:2Jkxxk9yYvCkE5G1sQT7GuEXm57JrvHu9k5YwTjsNtI=
 github.com/prometheus/exporter-toolkit v0.5.0/go.mod h1:OCkM4805mmisBhLmVFw858QYi3v0wKdY6/UxrT0pZVg=
 github.com/prometheus/exporter-toolkit v0.5.1/go.mod h1:OCkM4805mmisBhLmVFw858QYi3v0wKdY6/UxrT0pZVg=
-github.com/prometheus/exporter-toolkit v0.6.1 h1:Aqk75wQD92N9CqmTlZwjKwq6272nOGrWIbc8Z7+xQO0=
 github.com/prometheus/exporter-toolkit v0.6.1/go.mod h1:ZUBIj498ePooX9t/2xtDjeQYwvRpiPP2lh5u4iblj2g=
 github.com/prometheus/exporter-toolkit v0.7.0 h1:XtYeVeeC5daG4txbc9+mieKq+/AK4gtIBLl9Mulrjnk=
 github.com/prometheus/exporter-toolkit v0.7.0/go.mod h1:ZUBIj498ePooX9t/2xtDjeQYwvRpiPP2lh5u4iblj2g=
@@ -2452,8 +2449,9 @@ go.mongodb.org/mongo-driver v1.4.3/go.mod h1:WcMNYLx/IlOxLe6JRJiv2uXuCz6zBLndR4S
 go.mongodb.org/mongo-driver v1.4.4/go.mod h1:WcMNYLx/IlOxLe6JRJiv2uXuCz6zBLndR4SoGjYphSc=
 go.mongodb.org/mongo-driver v1.4.6/go.mod h1:WcMNYLx/IlOxLe6JRJiv2uXuCz6zBLndR4SoGjYphSc=
 go.mongodb.org/mongo-driver v1.5.1/go.mod h1:gRXCHX4Jo7J0IJ1oDQyUxF7jfy19UfxniMS4xxMmUqw=
-go.mongodb.org/mongo-driver v1.5.2 h1:AsxOLoJTgP6YNM0fXWw4OjdluYmWzQYp+lFJL7xu9fU=
 go.mongodb.org/mongo-driver v1.5.2/go.mod h1:gRXCHX4Jo7J0IJ1oDQyUxF7jfy19UfxniMS4xxMmUqw=
+go.mongodb.org/mongo-driver v1.7.5 h1:ny3p0reEpgsR2cfA5cjgwFZg3Cv/ofFh/8jbhGtz9VI=
+go.mongodb.org/mongo-driver v1.7.5/go.mod h1:VXEWRZ6URJIkUq2SCAyapmhH0ZLRBP+FT4xhp5Zvxng=
 go.mozilla.org/pkcs7 v0.0.0-20200128120323-432b2356ecb1/go.mod h1:SNgMg+EgDFwmvSmLRTNKC5fegJjB7v23qTQ0XLGUNHk=
 go.opencensus.io v0.20.1/go.mod h1:6WKK9ahsWS3RSO+PY9ZHZUfv2irvY6gN279GOPZjmmk=
 go.opencensus.io v0.20.2/go.mod h1:6WKK9ahsWS3RSO+PY9ZHZUfv2irvY6gN279GOPZjmmk=
