@@ -87,7 +87,7 @@ export class PanelChrome extends PureComponent<Props, State> {
         onAnnotationCreate: this.onAnnotationCreate,
         onAnnotationUpdate: this.onAnnotationUpdate,
         onAnnotationDelete: this.onAnnotationDelete,
-        canAddAnnotations: () => Boolean(props.dashboard.meta.canEdit || props.dashboard.meta.canMakeEditable),
+        canAddAnnotations: () => Boolean(true),
         onInstanceStateChange: this.onInstanceStateChange,
         onToggleLegendSort: this.onToggleLegendSort,
       },

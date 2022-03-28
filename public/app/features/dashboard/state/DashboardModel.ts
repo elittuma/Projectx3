@@ -1167,7 +1167,7 @@ export class DashboardModel {
   };
 
   canAddAnnotations() {
-    return this.meta.canEdit || this.meta.canMakeEditable;
+    return true;
   }
 
   shouldUpdateDashboardPanelFromJSON(updatedPanel: PanelModel, panel: PanelModel) {

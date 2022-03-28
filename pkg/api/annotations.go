@@ -8,7 +8,6 @@ import (
 	"github.com/grafana/grafana/pkg/api/response"
 	"github.com/grafana/grafana/pkg/models"
 	"github.com/grafana/grafana/pkg/services/annotations"
-	"github.com/grafana/grafana/pkg/services/guardian"
 	"github.com/grafana/grafana/pkg/util"
 )
 
@@ -52,9 +51,6 @@ func (e *CreateAnnotationError) Error() string {
 }
 
 func PostAnnotation(c *models.ReqContext, cmd dtos.PostAnnotationsCmd) response.Response {
-	if canSave, err := canSaveByDashboardID(c, cmd.DashboardId); err != nil || !canSave {
-		return dashboardGuardianResponse(err)
-	}
 
 	repo := annotations.GetRepository()
 
@@ -154,10 +150,6 @@ func UpdateAnnotation(c *models.ReqContext, cmd dtos.UpdateAnnotationsCmd) respo
 
 	repo := annotations.GetRepository()
 
-	if resp := canSave(c, repo, annotationID); resp != nil {
-		return resp
-	}
-
 	item := annotations.Item{
 		OrgId:    c.OrgId,
 		UserId:   c.UserId,
@@ -179,10 +171,6 @@ func PatchAnnotation(c *models.ReqContext, cmd dtos.PatchAnnotationsCmd) respons
 	annotationID := c.ParamsInt64(":annotationId")
 
 	repo := annotations.GetRepository()
-
-	if resp := canSave(c, repo, annotationID); resp != nil {
-		return resp
-	}
 
 	items, err := repo.Find(&annotations.ItemQuery{AnnotationId: annotationID, OrgId: c.OrgId})
 
@@ -244,10 +232,6 @@ func DeleteAnnotationByID(c *models.ReqContext) response.Response {
 	repo := annotations.GetRepository()
 	annotationID := c.ParamsInt64(":annotationId")
 
-	if resp := canSave(c, repo, annotationID); resp != nil {
-		return resp
-	}
-
 	err := repo.Delete(&annotations.DeleteParams{
 		OrgId: c.OrgId,
 		Id:    annotationID,
@@ -257,36 +241,6 @@ func DeleteAnnotationByID(c *models.ReqContext) response.Response {
 	}
 
 	return response.Success("Annotation deleted")
-}
-
-func canSaveByDashboardID(c *models.ReqContext, dashboardID int64) (bool, error) {
-	if dashboardID == 0 && !c.SignedInUser.HasRole(models.ROLE_EDITOR) {
-		return false, nil
-	}
-
-	if dashboardID != 0 {
-		guard := guardian.New(c.Req.Context(), dashboardID, c.OrgId, c.SignedInUser)
-		if canEdit, err := guard.CanEdit(); err != nil || !canEdit {
-			return false, err
-		}
-	}
-
-	return true, nil
-}
-
-func canSave(c *models.ReqContext, repo annotations.Repository, annotationID int64) response.Response {
-	items, err := repo.Find(&annotations.ItemQuery{AnnotationId: annotationID, OrgId: c.OrgId})
-	if err != nil || len(items) == 0 {
-		return response.Error(500, "Could not find annotation to update", err)
-	}
-
-	dashboardID := items[0].DashboardId
-
-	if canSave, err := canSaveByDashboardID(c, dashboardID); err != nil || !canSave {
-		return dashboardGuardianResponse(err)
-	}
-
-	return nil
 }
 
 func GetAnnotationTags(c *models.ReqContext) response.Response {
