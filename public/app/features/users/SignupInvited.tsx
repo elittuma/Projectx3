@@ -18,7 +18,7 @@ const navModel = {
   main: {
     icon: 'grafana',
     text: 'Invite',
-    subTitle: 'Register your Grafana account',
+    subTitle: 'Register your account',
     breadcrumbs: [{ title: 'Login', url: 'login' }],
   },
   node: {
