@@ -24,7 +24,7 @@ export const getSteps = (): SetupStep[] => [
         info:
           'Set up and understand Grafana if you have no prior experience. This tutorial guides you through the entire process and covers the “Data source” and “Dashboards” steps to the right.',
         href: 'https://grafana.com/tutorials/grafana-fundamentals',
-        icon: 'grafana',
+        icon: 'users-alt',
         check: () => Promise.resolve(store.get(step1Key)),
         key: step1Key,
         done: false,

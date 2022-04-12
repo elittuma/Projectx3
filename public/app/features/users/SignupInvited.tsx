@@ -16,6 +16,7 @@ interface FormModel {
 
 const navModel = {
   main: {
+    icon: 'users-alt',
     text: 'Invite',
     subTitle: 'Register your account',
     breadcrumbs: [{ title: 'Login', url: 'login' }],
