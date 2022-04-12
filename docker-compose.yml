@@ -26,7 +26,7 @@ services:
       - '443:3000'
       - '3000:3000'
     environment:
-      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,grafana-worldmap-panel,ryantxu-annolist-panel,marcusolsson-dynamictext-panel,agenty-flowcharting-panel,isaozler-paretochart-panel,natel-plotly-panel,grafana-polystat-panel,vonage-status-panel,innius-video-panel,pierosavi-imageit-panel,grafana-googlesheets-datasource
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,grafana-worldmap-panel,ryantxu-annolist-panel,marcusolsson-dynamictext-panel,agenty-flowcharting-panel,isaozler-paretochart-panel,natel-plotly-panel,grafana-polystat-panel,vonage-status-panel,innius-video-panel,pierosavi-imageit-panel,grafana-googlesheets-datasource,aidanmountford-html-panel,marcusolsson-treemap-panel
     volumes:
       - ./custom:/usr/share/grafana/public/img/custom
       - ./certs:/etc/projectx3
