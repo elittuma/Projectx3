@@ -7,7 +7,6 @@ import { Button, HorizontalGroup } from '@grafana/ui';
 
 const navModel = {
   main: {
-    icon: 'grafana',
     subTitle: 'Preferences',
     text: 'Select active organization',
   },

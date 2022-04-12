@@ -16,7 +16,6 @@ interface FormModel {
 
 const navModel = {
   main: {
-    icon: 'grafana',
     text: 'Invite',
     subTitle: 'Register your account',
     breadcrumbs: [{ title: 'Login', url: 'login' }],

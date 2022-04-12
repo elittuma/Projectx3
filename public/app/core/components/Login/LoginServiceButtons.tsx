@@ -56,7 +56,6 @@ const loginServices: () => LoginServices = () => {
       enabled: oauthEnabled && config.oauth.grafana_com,
       name: 'Grafana.com',
       hrefName: 'grafana_com',
-      icon: 'grafana',
     },
     okta: {
       bgColor: '#2f2f2f',
