@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal, ModalTabsHeader, TabContent } from '@grafana/ui';
 import { DashboardModel, PanelModel } from 'app/features/dashboard/state';
 import { ShareLink } from './ShareLink';
+import { ShareExport } from './ShareExport';
 import { ShareSnapshot } from './ShareSnapshot';
 import { ShareModalTabModel } from './types';
 import { contextSrv } from 'app/core/core';
@@ -42,7 +43,9 @@ function getTabs(props: Props) {
     // }
     tabs.push(...customPanelTabs);
   } else {
-    // tabs.push({ label: 'Export', value: 'export', component: ShareExport });
+    if (contextSrv.isGrafanaAdmin) {
+      tabs.push({ label: 'Export', value: 'export', component: ShareExport });
+    }
     tabs.push(...customDashboardTabs);
   }
 
