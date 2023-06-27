@@ -21,7 +21,7 @@ interface AnnotationEditorPluginProps {
 const getTagsFromVariables = () => {
   const variables = getTemplateSrv().getVariables();
   return variables.reduce((acc: string[], variable) => {
-    if ('options' in variable) {
+    if ('options' in variable && variable.name === 'nodeId')  {
       const selectedOptions = variable.options.filter((option) => option.selected);
       return acc.concat(...selectedOptions.map((option) => option.text || ''));
     }
